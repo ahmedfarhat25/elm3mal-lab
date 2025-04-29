@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدماتنا - المعمل للتحاليل الطبية</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <h1>المعمل</h1>
+                        <p>للتحاليل الطبية</p>
+                    </div>
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="services.html" class="active">خدماتنا</a></li>
+                            <li><a href="about.html">من نحن</a></li>
+                            <li><a href="contact.html">تواصل معنا</a></li>
+                            <li><a href="dashboard.html" class="dashboard-link">لوحة التحكم</a></li>
+                        </ul>
+                    </nav>
+                    <div class="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="dark-mode-toggle">
+                        <input type="checkbox" id="dark-mode-toggle">
+                        <label for="dark-mode-toggle">
+                            <svg class="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                            <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Services Hero -->
+        <section class="services-hero">
+            <div class="container">
+                <div class="services-hero-content">
+                    <h1>خدماتنا</h1>
+                    <p>نقدم مجموعة متنوعة من التحاليل الطبية بأعلى دقة وجودة</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Categories -->
+        <section class="service-categories">
+            <div class="container">
+                <ul class="category-tabs">
+                    <li class="active"><a href="#all">جميع الخدمات</a></li>
+                    <li><a href="#blood">تحاليل الدم</a></li>
+                    <li><a href="#hormones">الفحوصات الهرمونية</a></li>
+                    <li><a href="#microbiology">الميكروبيولوجي</a></li>
+                    <li><a href="#biochemistry">الكيمياء الحيوية</a></li>
+                    <li><a href="#other">تحاليل أخرى</a></li>
+                </ul>
+
+                <div class="services-search">
+                    <input type="text" placeholder="ابحث عن تحليل..." id="service-search">
+                    <button type="button" class="search-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services List -->
+        <section class="services-list" id="all">
+            <div class="container">
+                <h2 class="section-title">جميع التحاليل الطبية</h2>
+                <div class="services-grid">
+                    <!-- Blood Tests -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2v6m0 0a4 4 0 0 1 4 4m-4-4a4 4 0 0 0-4 4m4-4v12m0 0a6 6 0 0 0 6-6m-6 6a6 6 0 0 1-6-6"></path>
+                            </svg>
+                        </div>
+                        <h3>صورة دم كاملة (CBC)</h3>
+                        <p>فحص شامل لمكونات الدم يشمل تعداد كريات الدم الحمراء والبيضاء والصفائح الدموية ومستوى الهيموجلوبين</p>
+                        <div class="service-meta">
+                            <span class="service-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                النتائج في نفس اليوم
+                            </span>
+                            <span class="service-category" data-category="blood">تحاليل الدم</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2v6m0 0a4 4 0 0 1 4 4m-4-4a4 4 0 0 0-4 4m4-4v12m0 0a6 6 0 0 0 6-6m-6 6a6 6 0 0 1-6-6"></path>
+                            </svg>
+                        </div>
+                        <h3>وظائف الكبد</h3>
+                        <p>تحليل شامل لوظائف الكبد يشمل ALT، AST، البيليروبين الكلي والمباشر، البروتين الكلي، الألبومين والإنزيمات الأخرى</p>
+                        <div class="service-meta">
+                            <span class="service-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                النتائج في نفس اليوم
+                            </span>
+                            <span class="service-category" data-category="blood">تحاليل الدم</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2v6m0 0a4 4 0 0 1 4 4m-4-4a4 4 0 0 0-4 4m4-4v12m0 0a6 6 0 0 0 6-6m-6 6a6 6 0 0 1-6-6"></path>
+                            </svg>
+                        </div>
+                        <h3>وظائف الكلى</h3>
+                        <p>تحليل شامل لوظائف الكلى يشمل اليوريا، الكرياتينين، حمض اليوريك، الصوديوم، البوتاسيوم والكالسيوم</p>
+                        <div class="service-meta">
+                            <span class="service-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                النتائج في نفس اليوم
+                            </span>
+                            <span class="service-category" data-category="blood">تحاليل الدم</span>
+                        </div>
+                    </div>
+
+                    <!-- Hormone Tests -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <h3>تحليل هرمونات الغدة الدرقية</h3>
+                        <p>تحليل شامل لهرمونات الغدة الدرقية يشمل TSH، T3، T4، وغيرها من القياسات الضرورية</p>
+                        <div class="service-meta">
+                            <span class="service-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                النتائج خلال 24 ساعة
+                            </span>
+                            <span class="service-category" data-category="hormones">الفحوصات الهرمونية</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <h3>هرمونات الخصوبة للنساء</h3>
+                        <p>تحليل هرمونات الخصوبة للنساء مثل FSH، LH، البروجسترون، الإستروجين والبرولاكتين</p>
+                        <div class="service-meta">
+                            <span class="service-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                النتائج خلال 24 ساعة
+                            </span>
+                            <span class="service-category" data-category="hormones">الفحوصات الهرمونية</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <h3>هرمونات الخصوبة للرجال</h3>
+                        <p>تحليل هرمونات الخصوبة للرجال مثل التستوستيرون، FSH، LH والبرولاكتين</p>
+                        <div class="service-meta">
+                            <span class="service-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                النتائج خلال 24 ساعة
+                            </span>
+                            <span class="service-category" data-category="hormones">الفحوصات الهرمونية</span>
+                        </div>
+                    </div>
+
+                    <!-- Microbiology Tests -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                            </svg>
+                        </div>
+                        <h3>مزرعة بكتيرية</h3>
+                        <p>فحص المزارع البكتيرية للبول، البراز، الدم، القشع وغيرها من العينات</p>
+                        <div class="service-meta">
+                            <span class="service-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                النتائج خلال 48-72 ساعة
+                            </span>
+                            <span class="service-category" data-category="microbiology">الميكروبيولوجي</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                            </svg>
+                        </div>
+                        <h3>فحص الطفيليات</h3>
+                        <p>فحص للكشف عن وجود الطفيليات في البراز والدم</p>
+                        <div class="service-meta">
+                            <span class="service-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                النتائج خلال 24 ساعة
+                            </span>
+                            <span class="service-category" data-category="microbiology">الميكروبيولوجي</span>
+                        </div>
+                    </div>
+
+                    <!-- Biochemistry Tests -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3>تحليل السكر التراكمي</h3>
+                        <p>قياس متوسط مستوى السكر في الدم خلال آخر 3 أشهر (HbA1c)</p>
+                        <div class="service-meta">
+                            <span class="service-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                النتائج خلال 24 ساعة
+                            </span>
+                            <span class="service-category" data-category="biochemistry">الكيمياء الحيوية</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3>تحليل دهون الدم</h3>
+                        <p>تحليل شامل لدهون الدم يشمل الكوليسترول الكلي، الدهون الثلاثية، HDL، LDL ونسبة المخاطر</p>
+                        <div class="service-meta">
+                            <span class="service-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                النتائج في نفس اليوم
+                            </span>
+                            <span class="service-category" data-category="biochemistry">الكيمياء الحيوية</span>
+                        </div>
+                    </div>
+
+                    <!-- Other Tests -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 10c0 6-8 10-8 10s-8-4-8-10a8 8 0 0 1 16 0Z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <h3>تحليل فيتامين د</h3>
+                        <p>قياس مستوى فيتامين د في الدم للكشف عن نقصه</p>
+                        <div class="service-meta">
+                            <span class="service-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                النتائج خلال 24 ساعة
+                            </span>
+                            <span class="service-category" data-category="other">تحاليل أخرى</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 10c0 6-8 10-8 10s-8-4-8-10a8 8 0 0 1 16 0Z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <h3>تحليل فيتامين ب12</h3>
+                        <p>قياس مستوى فيتامين ب12 في الدم للكشف عن نقصه</p>
+                        <div class="service-meta">
+                            <span class="service-time">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                النتائج خلال 24 ساعة
+                            </span>
+                            <span class="service-category" data-category="other">تحاليل أخرى</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Packages -->
+        <section class="service-packages">
+            <div class="container">
+                <h2 class="section-title">باقات الفحص الشاملة</h2>
+                <div class="packages-grid">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3>الفحص الأساسي</h3>
+                            <div class="package-price">350 ج.م</div>
+                        </div>
+                        <div class="package-body">
+                            <ul class="package-features">
+                                <li>صورة دم كاملة (CBC)</li>
+                                <li>تحليل سكر الصيام</li>
+                                <li>وظائف الكبد الأساسية (ALT & AST)</li>
+                                <li>وظائف الكلى الأساسية (Creatinine & Urea)</li>
+                                <li>تحليل البول الروتيني</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary">احجز الآن</a>
+                        </div>
+                    </div>
+
+                    <div class="package-card featured">
+                        <div class="package-header">
+                            <h3>الفحص الشامل</h3>
+                            <div class="package-price">650 ج.م</div>
+                        </div>
+                        <div class="package-body">
+                            <ul class="package-features">
+                                <li>صورة دم كاملة (CBC)</li>
+                                <li>تحليل سكر الصيام</li>
+                                <li>تحليل السكر التراكمي</li>
+                                <li>وظائف الكبد الشاملة</li>
+                                <li>وظائف الكلى الشاملة</li>
+                                <li>تحليل دهون الدم</li>
+                                <li>تحليل البول الروتيني</li>
+                                <li>تحليل هرمونات الغدة الدرقية (TSH)</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary">احجز الآن</a>
+                        </div>
+                    </div>
+
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3>فحص ما قبل الزواج</h3>
+                            <div class="package-price">850 ج.م</div>
+                        </div>
+                        <div class="package-body">
+                            <ul class="package-features">
+                                <li>صورة دم كاملة (CBC)</li>
+                                <li>فصيلة الدم والعامل الريسيسي</li>
+                                <li>تحليل الأجسام المضادة للفيروسات الكبدية</li>
+                                <li>تحليل الأجسام المضادة للإيدز</li>
+                                <li>تحليل الثلاسيميا</li>
+                                <li>هرمونات أساسية للخصوبة</li>
+                                <li>تحليل البول الروتيني</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary">احجز الآن</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Home Service -->
+        <section class="home-service">
+            <div class="container">
+                <div class="home-service-content">
+                    <div class="home-service-text">
+                        <h2>خدمة سحب العينات المنزلية</h2>
+                        <p>نوفر خدمة سحب العينات في المنزل لراحتك، مع الالتزام بأعلى معايير الجودة والنظافة.</p>
+                        <ul class="home-service-features">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                فريق طبي متخصص
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                تغطية جميع مناطق محافظة الفيوم
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                معدات وأدوات معقمة
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                نتائج سريعة متاحة إلكترونياً
+                            </li>
+                        </ul>
+                        <div class="home-service-cta">
+                            <a href="contact.html" class="btn btn-primary">احجز خدمة منزلية</a>
+                            <span class="home-service-phone">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                01234567890
+                            </span>
+                        </div>
+                    </div>
+                    <div class="home-service-image">
+                        <img src="https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="خدمة سحب العينات المنزلية">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq">
+            <div class="container">
+                <h2 class="section-title">أسئلة شائعة</h2>
+                <div class="faq-content">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>كيف أستعد للتحاليل الطبية؟</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>يختلف الاستعداد للتحاليل الطبية حسب نوع التحليل. بعض التحاليل تتطلب الصيام لمدة 8-12 ساعة مثل تحاليل السكر ودهون الدم، وبعضها لا يتطلب أي استعداد خاص. سيقوم فريقنا الطبي بإرشادك بالتعليمات اللازمة عند حجز الموعد.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>كم تستغرق مدة ظهور النتائج؟</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>تختلف مدة ظهور النتائج حسب نوع التحليل. بعض التحاليل الروتينية مثل صورة الدم الكاملة تظهر نتائجها في نفس اليوم، بينما قد تستغرق التحاليل المتخصصة أو المزارع البكتيرية فترة أطول تتراوح بين 24 ساعة إلى 3 أيام.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>كيف يمكنني الحصول على نتائج التحاليل؟</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>يمكنك الحصول على نتائج التحاليل بعدة طرق: استلامها من المعمل مباشرة، أو من خلال البريد الإلكتروني، أو عبر لوحة التحكم الإلكترونية على موقعنا، أو يمكن إرسالها لك عبر تطبيق الواتساب حسب طلبك.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>هل تقدمون خدمة سحب العينات المنزلية لجميع أنواع التحاليل؟</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>نعم، نقدم خدمة سحب العينات المنزلية لجميع أنواع التحاليل تقريباً، باستثناء بعض التحاليل المتخصصة التي تتطلب إجراءات خاصة أو معدات غير متنقلة. يمكنك الاستفسار عن التحليل المطلوب عند حجز الخدمة المنزلية.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>هل تحتاج إلى مساعدة في اختيار التحليل المناسب؟</h2>
+                    <p>فريقنا الطبي على استعداد للمساعدة وتقديم النصائح الطبية</p>
+                    <a href="contact.html" class="btn btn-primary">تواصل معنا</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <h2>المعمل</h2>
+                        <p>للتحاليل الطبية</p>
+                    </div>
+                    <div class="footer-links">
+                        <h3>روابط سريعة</h3>
+                        <ul>
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="services.html">خدماتنا</a></li>
+                            <li><a href="about.html">من نحن</a></li>
+                            <li><a href="contact.html">تواصل معنا</a></li>
+                            <li><a href="dashboard.html">لوحة التحكم</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>معلومات التواصل</h3>
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            شارع سعد زغلول، الفيوم، مصر
+                        </p>
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            01234567890
+                        </p>
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            info@almamal.com
+                        </p>
+                    </div>
+                    <div class="footer-hours">
+                        <h3>ساعات العمل</h3>
+                        <p>السبت - الخميس: 8 صباحاً - 10 مساءً</p>
+                        <p>الجمعة: 9 صباحاً - 8 مساءً</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>جميع الحقوق محفوظة &copy; 2025 المعمل للتحاليل الطبية</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
